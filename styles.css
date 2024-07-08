@@ -1,6 +1,6 @@
 @font-face {
     font-family: "evil_empire";
-    src: url('../font/Evil Empire.otf');
+    src: url('./font/Evil Empire.otf');
 }
 
 body {
