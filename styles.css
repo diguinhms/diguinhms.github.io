@@ -43,3 +43,38 @@ body {
     margin: 0 2px -5px;
     /* Espaçamento entre os elementos */
 }
+
+body::before, body::after, .main-container::before, .main-container::after {
+    content: '';
+    position: absolute;
+    background: red;
+    z-index: 9999;
+  }
+  
+  body::before {
+    width: 1px;
+    height: 100%;
+    top: 0;
+    left: 50%;
+  }
+  
+  body::after {
+    height: 1px;
+    width: 100%;
+    left: 0;
+    top: 50%;
+  }
+  
+  .main-container::before {
+    width: 1px;
+    height: 100%;
+    top: 0;
+    left: 50%;
+  }
+  
+  .main-container::after {
+    height: 1px;
+    width: 100%;
+    left: 0;
+    top: 50%;
+  }
