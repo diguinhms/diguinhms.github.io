@@ -6,9 +6,10 @@
 html,
 body {
     height: 100%;
-    margin-left: 18.01%;
+    margin: 0; /* Remova a margem lateral fixa */
     display: flex;
-    align-items: center;
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
     background-color: black;
     color: white;
 }
@@ -17,7 +18,9 @@ body {
 .main-container {
     display: flex;
     justify-content: center;
+    margin-bottom: 1.1rem;
     align-items: center;
+    flex-direction: column; /* Centraliza em coluna */
     height: 100%;
     width: 100%;
 }
@@ -25,56 +28,31 @@ body {
 /* Estilo para o contêiner dos nomes */
 .name-container {
     display: flex;
+    justify-content: center;
     align-items: center;
     text-align: center;
-    font-family: evil_empire;
+    font-family: fantasy;
 }
 
 #first_name, #last_name {
-    font-size: 48px;
-    /* Tamanho da fonte para os elementos laterais */
-    margin: 0 10px;
-    /* Espaçamento entre os elementos */
+    font-size: 30px;
+    margin: 0 5px; /* Espaçamento entre os elementos */
 }
 
 #aka {
-    font-size: 32px;
-    /* Tamanho da fonte para o elemento central */
-    margin: 0 2px -5px;
-    /* Espaçamento entre os elementos */
+    font-size: 18px;
+    margin: 0 2px; /* Espaçamento entre os elementos */
 }
 
-body::before, body::after, .main-container::before, .main-container::after {
-    content: '';
-    position: absolute;
-    background: red;
-    z-index: 9999;
-  }
-  
-  body::before {
-    width: 1px;
-    height: 100%;
-    top: 0;
-    left: 50%;
-  }
-  
-  body::after {
-    height: 1px;
-    width: 100%;
-    left: 0;
-    top: 50%;
-  }
-  
-  .main-container::before {
-    width: 1px;
-    height: 100%;
-    top: 0;
-    left: 50%;
-  }
-  
-  .main-container::after {
-    height: 1px;
-    width: 100%;
-    left: 0;
-    top: 50%;
-  }
+/* Estilo para o contêiner do apelido */
+.nickname-container {
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    font-family: evil_empire;
+    width: 100%; /* Garante que o contêiner ocupe toda a largura disponível */
+}
+
+#nick {
+    font-size: 108px;
+}
