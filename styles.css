@@ -5,54 +5,32 @@
 
 html,
 body {
-    height: 100%;
-    margin: 0; /* Remova a margem lateral fixa */
-    display: flex;
-    justify-content: center; /* Centraliza horizontalmente */
-    align-items: center; /* Centraliza verticalmente */
-    background-color: black;
-    color: white;
+  height: 100%;
+  background-color: black;
+  font-family: Helvetica;
 }
 
-/* Estilo para o contêiner principal */
-.main-container {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 1.1rem;
-    align-items: center;
-    flex-direction: column; /* Centraliza em coluna */
-    height: 100%;
-    width: 100%;
-}
-
-/* Estilo para o contêiner dos nomes */
-.name-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    font-family: fantasy;
-}
-
-#first_name, #last_name {
-    font-size: 30px;
-    margin: 0 5px; /* Espaçamento entre os elementos */
-}
-
-#aka {
-    font-size: 18px;
-    margin: 0 2px; /* Espaçamento entre os elementos */
-}
-
-/* Estilo para o contêiner do apelido */
-.nickname-container {
-    display: flex;
-    justify-content: center; /* Centraliza horizontalmente */
-    align-items: center; /* Centraliza verticalmente */
+#text {
     font-family: evil_empire;
-    width: 100%; /* Garante que o contêiner ocupe toda a largura disponível */
+}
+
+#main-div {
+  background-color: black;
 }
 
 #nick {
-    font-size: 108px;
+  font-family: evil_empire;
+  font-size: 84px;
+}
+
+table tr th {
+  text-align: center;
+  background-color: black !important;
+  color: white !important;
+  text-decoration: none !important;
+}
+
+a, a:focus, a:active {
+  text-decoration: none !important;
+  color: white !important;
 }
